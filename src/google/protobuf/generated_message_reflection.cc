@@ -2502,7 +2502,6 @@ bool Reflection::HasBit(const Message& message,
             return GetField<ArenaStringPtr>(message, field).Get().size() > 0;
           }
         }
-        return false;
       case FieldDescriptor::CPPTYPE_BOOL:
         return GetRaw<bool>(message, field) != false;
       case FieldDescriptor::CPPTYPE_INT32:
